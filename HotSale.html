@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Hot Sale</title>
+	<link rel="stylesheet" type="text/css" href="public.css">
+	<style type="text/css">
+		.banner{position: relative;}
+		.banner img{min-width: 1200px}
+		.banner-left,.banner-right{
+			position: absolute
+			;font-size: 20px;
+			color: #fff;
+			width: 40px;
+			line-height: 40px;
+			background-color: #000;
+			opacity: 0.8;filter:alpha(opacity=80);
+			border-radius: 50%;
+			text-align: center;
+			cursor: pointer;
+		}
+		.banner-right:hover,.banner-left:hover{
+			opacity: 0.5;
+			filter:alpha(opacity=50);
+		}
+		.banner-left{
+			left: 20px;
+			top:50%;
+			margin-top: -20px
+		}	
+		.banner-right{
+			right: 20px;
+			top:50%;
+			margin-top: -20px
+		}
+		.banner-bottom{
+			position: absolute;
+			left: 50%;
+			margin-left: -50px;
+			bottom: 30px;
+		}
+		.banner-bottom a{
+			float: left;	
+			width: 15px;height: 15px;
+			background-color: #ccc;
+			border-radius: 50%;
+			margin-left: 15px;
+		}
+	.middle{
+		margin-top: 55px;
+		width: 1200px;
+		margin:0 auto;
+		
+	}
+	.miTop-ul p{color: #fff;}
+	.middle .miTop {
+		overflow: hidden;
+	}
+	.middle .miTop .bigTtl{	
+		width: 100%;
+		float: left;
+		color: #475168;
+		text-align: center;
+		font-size: 30px;
+	}
+	.p1 .pp{color: #fff}
+	.p1{background: url(image/10321046515_450x300.jpg) no-repeat;}
+	.p2{background: url(image/ac75323d6b6de243-c361eb70e2169653-c48e4e753affc552986d82a4c3138f7c.jpg) no-repeat;}
+	.p3{background: url(image/link111.jpg) no-repeat;}
+	.middle .miTop .smallTtl{
+		width: 100%;
+		float: left;
+		color: #8A8B8B;
+		line-height: 60px;
+		text-align: center;
+	}
+	.middle .miTop ul{
+		width: 100%;
+		float: left;
+		margin-top: 64px;
+		min-width: 1200px
+	}
+	.middle .miTop ul li{
+		margin-right:25px;
+		width: 360px;
+		height: 300px;
+		float: left;
+	}
+	.middle .miTop ul li div{
+		color: #797979;
+		text-align: center;
+		width: 360px;
+		height: 210px;
+		border-radius: 10px;
+	}
+	.middle .miTop ul li .bred{
+		color: white;
+
+	}
+	.middle .miTop ul li div p{
+		font-size: 16px;
+		line-height: 300px;
+	}
+	.middle .miTop ul li>p{
+		line-height: 25px;
+		margin-top: 25px;
+		color: #797979;
+	}
+	.middle .miTop .Tnow{
+		width: 100%;
+		float: left;
+		margin-top: 82px;
+	}
+	.middle .miTop .Tnow .Tblue{
+		
+		float: left;
+		width: 850px;
+		height: 89px;
+		background-color: #475168;
+		border-radius: 5px;
+	}
+	.middle .miTop .Tnow .Tblue .Btext{
+		margin-left: 20px;
+		line-height: 35px;
+		margin-top: 15px;
+		color: white
+	}
+	.middle .miTop .Tnow .Tblue .Stext{
+		margin-left: 20px;
+		font-size: 12px;
+		color: #93A9AA;
+	}
+	.middle .miTop .Tnow .Tred{
+		margin-left: 30px;
+		border-radius: 5px;
+		float: left;
+		height: 89px;
+		width: 265px;
+		background-color: #FF6C60;
+	}
+	.middle .miTop .Tnow .Tred p{
+		margin-left:30px;
+		line-height: 89px;
+		color: white;
+	}
+	.miMi{
+		margin-top:75px;
+		height:500px;
+		background-color: rgb(244,244,244);
+	}
+	.miMi img{
+		margin-top:100px;
+		float: left;
+		border-radius: 10px;
+	}
+	.miMi .Micha{
+		margin-left:100px;
+		width: 630px;
+		margin-top: 100px;
+		float: left;
+	}	
+	.miMi .Micha .Bicha{
+		color: #475168;
+		font-size: 18px;
+	}
+	.miMi .Micha .Socha{
+		line-height: 20px;
+		font-size: 12px;
+		margin-top: 70px;
+		color: #797979;
+
+	}
+	.miMi .Micha span{
+		line-height: 62px;
+		text-align: center;
+		color: white;
+		margin-top: 46px;
+		display: block;
+		width: 192px;
+		height: 62px;
+		background-color: #475168;
+		border-radius: 5px;
+	}
+	.miBo{
+		margin-top:170px; 
+	}
+	.miBo .boLe{
+		float: left;
+	}
+	.miBo .boRi{
+		width: 560px;
+		margin-left: 30px;
+		float:left;
+	}
+	.miBo .lalTo li{
+		color: white;
+		line-height: 54px;
+		text-align: center;
+		float: left;
+		margin-left: 1px;
+		width: 186px;
+		height: 54px;
+		background-color: #6F6F6F;
+	}
+	.miBo .lalTo .le{
+		background-color: white;
+		color: #6F6F6F;
+		border-radius: 5px 0 0 0;
+	}
+	.miBo .ri{
+		border-radius: 0 5px 0 0;
+	}
+	.miBo .lalBo .li img{
+		float: left;
+	}
+	.miBo .lalBo .li{
+		margin-top: 15px
+	}
+	.miBo .lalBo .li div{
+
+		margin-left: 60px;
+	}
+	.miBo .lalBo .li p{
+		color: #797979;
+		line-height: 20px;
+		font-size: 12px
+	}
+	.miBo .lalBo .li .redd{
+		font-size: 14px;
+		color: #F77B6F;
+	}
+	.miBo .boRi .sea img{
+		margin-top: 20px;
+		float: left;
+		border-radius: 50%
+	}
+	.miBo .boRi .sea span{
+		margin-top:30px;
+		float: left;
+		display:block;
+		width: 150px;
+		height: 50px;
+		margin-left: 10px;
+	}
+	.miBo .boRi .sea span p{
+		line-height: 20px;
+	}
+	.miBo .boRi .sea span .bi{
+		color: #504946;
+	}
+	.miBo .boRi .sea span .sl{
+		font-size: 12px;
+		color: #797979;
+	}
+	.miBo .boRi .lebb{
+		font-size: 12px;
+		padding: 20px 20px 20px 20px;
+		color: #79798A;
+		height: 102px;
+		margin-top: 20px;
+		background-color: #E9E9E9;
+		border-radius: 5px;
+	}
+	.miBo .ttom{
+		margin-top: 62px;
+	}
+	.miBo .ttom p{
+		color: #475168;
+		margin-bottom:20px;
+		font-size: 18px;
+		margin-left: 20px;
+	}
+	.miBo .ttom img{
+		margin-right: 20px;
+		float: left;
+	}
+	.miBo .leRi{
+		margin-top: 28px;
+		margin-left: 554px;
+
+	}
+	.miBo .leRi span{
+		text-align: center;
+		line-height: 40px;
+		margin-top: 40px;
+		float: left;
+		display: block;
+		border-radius: 5px;
+		margin-left:10px;
+		width: 70px;
+		background-color: #EEEEEE;
+
+	}
+	.and{
+		margin-top: 54px;
+		height: 400px;
+		width: 100%;
+		background-color: #E87C72;
+		line-height: 400px;
+		color: white;
+		text-align: center;
+		font-size: 20px
+	}
+	 .spo{
+		width: 850px;
+		margin:0 auto;
+		height: 210px;
+		margin-top: 60px;
+	}
+	.spo img{
+		float: left;
+		margin-left:70px;
+	}
+	.spo .spo-img{margin-left: 0px}
+	</style>
+</head>
+<body>
+	<div class="w1200 top-bg">
+		<a href="" class="logo"><img src="image/logo.png" width="80px" height="60px"></a>
+		<div class="nav">
+			<a href="index.html" class="nav-a">首页</a>
+			<a href="gequ.html" class="nav-a">榜单</a>
+			<a href="" class="nav-a">歌手</a>
+			<a href="taoge.html" class="nav-a">淘歌</a>
+			<a href="mv.html" class="nav-a">MV</a>
+			<a href="" class="nav-a">猜你喜欢</a>
+			<a href="Radio.html" class="nav-a">音乐电台</a>
+			<a href="contactus.html" class="nav-a">DJ舞曲</a>
+			<a href="" class="nav-last-a"><input type="botton" placeholder="选你所爱" class="nav-input" /><img src="image/sousuo.png" class="nav-sousuo"></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="head">
+		<div class="w1200">
+			<div class="head-left">
+				<a href="" class="head-left-o">Top</a><a href="">Music</a>
+			</div>
+			<div class="head-right">
+				<a href="" class="">Vip</a><a href="">登陆</a><a href="">注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="banner">
+		<img src="image/link4.jpg" height="500px" width="100%" />
+		<div class="banner-left">＜</div>
+		<div class="banner-right">＞</div>
+		<div class="banner-bottom">
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+	</div>
+	<div class="middle">
+		<div class="miTop">
+			<p class="bigTtl">最强音乐人</p>
+			<p class="smallTtl">如果你感兴趣，那就加入我们</p>
+			<ul class="miTop-ul">
+				<li class="p1">
+					<div>
+						<p>Marilyn Manson - 玛丽莲·曼森 </p>
+					</div>
+					<p class="pp" style="color:#fff">"你认为谁会泯灭你手上的烛台,那谁就会."你认为谁是上帝,那他就是,他的名字可以是Marilyn Manson.</p>
+				</li>
+				<li class="p2">
+					<div class="bred">
+						<p>Michael Jackson - 迈克尔·杰克逊</p>
+					</div>
+					<p>什么是真正伟大的歌星?他就是. 　　也许今后很多年里,不会再有人能超越他的地位,他亲手书写了一段传奇历史.他活着在这个世界上,本身已经代表了一个时代</p>
+				</li>
+				<li class="p3">
+					<div>
+						<p>Avril Lavigne（艾薇儿·拉维尼）</p>
+					</div>
+					<p>Avril Lavigne（艾薇儿·拉维尼）带动了整个欧美女性摇滚的一股浪潮.女性摇滚乐手里,她是当今最炙手可热的.</p>
+				</li>
+			</ul>
+			<div class="Tnow" style="min-width:1300px">
+				<div class="Tblue">
+					<p class="Btext">Linkin Park - 林肯公园</p>
+					<p class="Stext">如果有人要问:把几个天才组合到一起,他们能释放多大的力量? 答案,就看看现在的Linkin Park吧.</p>
+				</div>
+				<div class="Tred">
+					<p>一起来吧</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="miMi">
+		<div class="w1200">
+			<img src="image/15081216521109.jpg" width="415px" height="334px" />
+			<div class="Micha">
+				<p class="Bicha">周杰伦</p>
+				<p class="Socha">
+					周杰伦俨然成了亚洲最红的歌手。亚洲原创歌神.关于他的音乐，永远都争论不休。歌确实很好听，人们都很喜欢听他的歌。但无论如何，无论是喜欢他的词曲创作才华，还是喜欢听他的歌，都成就了他。毕竟他在亚洲，甚至欧美都打出了名气。中国的歌手，现在在欧美知名度最高的也是他。无论如何，他从一个非常有才华的歌曲制作人，变成了亚洲家喻户晓的人物，他的歌确实好听，是一个飞跃。他完成了一个壮丽的蜕变。
+				</p>
+				<span>亚洲天王</span>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="w1200">
+		<div class="miBo">
+			<div class="boLe">
+				<ul class="lalTo">
+					<li class="le">Top1</li>
+					<li>Top2</li>
+					<li class="ri">Top3</li>
+				</ul>
+				<div style="clear: both"></div>
+				<ul class="lalBo">
+					<li class="li">
+						<img src="image/10321046515_450x300.jpg" width="50px" height="50px" />
+						<div>
+							<p class="redd">玛丽莲·曼森（Marilyn Manson）</p>
+							<p>世界上现存的最顶尖摇滚乐手之一</p>
+						</div>
+						<div style="clear: both"></div>
+					</li>
+					<li class="li">
+						<img src="image/1453363852235748.jpg" width="50px" height="50px" />
+						<div>
+							<p class="redd">Michael Jackson -迈克尔·杰克逊</p>
+							<p>一个享誉全球的世界天王巨星,一个拥有天使灵魂的伟大天才,一个举世公认的流行音乐之王。</p>
+						</div>
+						<div style="clear: both"></div>
+					</li>
+					<li class="li">
+						<img src="image/10394335540_450x300.jpg" width="50px" height="50px" />
+						<div>
+							<p class="redd">Eminem - 埃米纳姆</p>
+							<p>Eminem，美国说唱界的一面旗帜，一个俗世缠身的天才。 </p>
+						</div>
+					</li>						
+				</ul>
+			</div>
+			<div class="boRi">
+				<div class="sea">
+						<img src="image/22f31aadeab180f4.png" width="100px" height="100px" />
+					<span>
+						<p class="bi">迈克尔·杰克逊</p>
+						<p class="sl">影响世界</p>
+					</span>
+				</div>
+				<div style="clear: both"></div>
+				<div class="lebb">迈克尔·杰克逊（Michael Jackson），历史上伟大的音乐天才。
+
+					他是世界第一，他是整个美利坚合众国最值得歌颂的一个音乐人。
+
+					全世界为他疯狂。他魔幻般的舞步是世界上最独特和美妙的。
+
+					交响曲般华丽的音乐让人们血脉贲张，如痴如狂。
+
+					他举行过这个世界上最豪华的演唱会，创造出了最伟大的音乐。
+				</div>
+			</div>
+			<div style="clear: both"></div>
+			<div class="ttom">
+				<p>世界巨星</p>
+				<img src="image/4f9b19fe3e7f53d9.png" width="270px" height="202px" />
+				<img src="image/3713a53d5bf7214b.jpg" width="270px" height="202px" />
+				<img src="image/84e20c09c54e1a21.jpg" width="270px" height="202px" />
+				<img src="image/d733def6f72a4161.jpg" width="270px" height="202px" />
+			</div>
+			<div class="leRi">
+				<span><</span>
+				<span>></span>
+			</div>
+			<div style=" clear: both"></div>
+			
+		</div>
+	</div>
+	<div class="and">音乐就像一剂能让人放松的药。也成为了许多人的精神食粮。全球的音乐风格各异，又各有各的特色。音乐人成为功不可没的人才。</div>
+	<div class="spo">
+		<img src="image/b2116b109e939b9b.jpg" width="114px" height="82px" / class="spo-img">
+		<img src="image/b9d8a558c252ba60.jpg" width="114px" height="82px" />
+		<img src="image/325c9f967e4389ab.jpg" width="114px" height="82px" />
+		<img src="image/884bbf5382ad5b53.jpg" width="114px" height="82px" />
+		<img src="image/9cfb81108a013d94.jpg" width="114px" height="82px" />
+	</div>
+	<footer class="footer">
+		<div class="w1200">
+			<div class="footer_left">
+				<h5>关于</h5>
+				<a href="">关于我们</a>
+				<a href="">music招聘</a>
+				<a href="">独立音乐合作人</a>
+				<a href="">联系我们</a>
+				<a href="">友情链接</a>
+			</div>
+			<div class="footer_left">
+				<h5>特色服务</h5>
+				<a href="">VIP</a>
+				<img src="image/sup_hot.gif" class="footer-gif">
+				<a href="">音乐达人</a>
+				<a href="">LOOP</a>
+				<a href="">音乐专题</a>
+			</div>
+			<div class="footer_left"></div>
+			<div class="footer_left footer_right">
+				<h5>下载音乐客户端</h5>
+				<a href="" class="footer_a"></a>
+				<a href="" class="footer_af"></a>
+				<a href="" class="footer_afi"></a>
+				<a href="" class="footer_afir"></a>
+				<a href="" class="footer_afirst"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

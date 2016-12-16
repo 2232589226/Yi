@@ -1,0 +1,663 @@
+s<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>静态页面</title>
+	<style>
+	*{
+		margin:0px;
+		padding: 0px;
+		line-height: 1;
+		box-sizing:border-box;
+		font-family: Microsoft Yahei;
+	}
+	.box{
+		width: 1263px;
+		margin:0 auto;
+	}
+	.topNav{
+		height: 101px;
+	}
+	.topNav .logo{
+		font-size: 30px;
+		color: #3E2247;
+		margin-left: 65px;
+	}
+	.topNav .logo .your{
+		float: left;
+		line-height: 101px;
+	}
+	.topNav .logo .name{
+		float: left;
+		line-height: 101px;
+		color: #DEB5E2;
+	}
+	ul{
+		list-style: none
+	}
+	.topNav .youName {
+		padding: 25px 0;
+		float: left;
+		margin-left: 230px;
+	}
+	.topNav .youName li{
+		font-size: 14px;
+		border-radius: 5px;
+		width: 90px;
+		height: 45px;
+		float: left;
+		line-height: 40px;
+		color:#999999;
+	}
+	.topNav .youName li a{
+		width: 70px;
+		line-height: 45px;
+		display: block;
+		margin:0 auto;
+	}
+	.topNav .youName .red{
+		background-color:#F77B6F;
+	}
+	.topNav .hunt{
+		float: right;
+		width: 25px;
+		height: 25px;
+		margin-top: 38px;
+		margin-right: 40px;
+	}
+	.topNav .youName .topRight{
+		margin-left: 20px
+	}
+	.topBottom{
+		position: relative;
+		height: 495px;
+		width: 100%;
+		background:url(aa.jpg);
+		background-size: 100% 100%;
+	}
+	.topBottom .Lleft{
+		left: 20px;
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 40px;
+		background-color: #99999C;
+		top: 50%;
+		margin-top: -20px;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		color: white;
+	}
+	.topBottom .Lright{
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 40px;
+		background-color: #99999C;
+		right: 20px;
+		top: 50%;
+		margin-top: -20px;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		color: white;
+	}
+	.topBottom .buy{
+		letter-spacing: 5px;
+		line-height: 50px;
+		text-align: center;
+		color: white;
+		top: 295px;
+		left: 58px;
+		position: absolute;
+		width: 150px;
+		height: 50px;
+		background-color: #F77B6F;
+		border-radius: 5px;
+	}
+	.topBottom .price{
+		position: absolute;
+		top: 112px;
+		left: 60px;
+		color: #F77B6F;
+		font-size: 35px;
+	}
+	.topBottom .pri{
+		font-size: 20px;
+		left: 60px;
+		width: 350px;
+		position: absolute;
+		color:white;
+		top: 165px;
+	}
+	.topBottom .pr{
+		left: 60px;
+		width: 350px;
+		position: absolute;
+		color:white;
+		top: 200px;
+	}
+	.topBottom ul{
+		width: 80px;
+		margin-left:-40px;
+		top: 450px;
+		left: 50%;
+		position: absolute;
+	}
+	.topBottom ul li{
+		margin-left:10px;
+		float: left;
+		background-color:#D8D8D8;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+	}
+	.topBottom ul .atpre{
+		background-color: #919191
+	}
+	.middle{
+		margin-top: 55px;
+	}
+	.middle .miTop {
+		overflow: hidden;
+	}
+	.middle .miTop .bigTtl{	
+		width: 100%;
+		float: left;
+		color: #475168;
+		text-align: center;
+		font-size: 30px;
+	}
+	.middle .miTop .smallTtl{
+		width: 100%;
+		float: left;
+		color: #8A8B8B;
+		line-height: 60px;
+		text-align: center;
+	}
+	.middle .miTop ul{
+		width: 100%;
+		float: left;
+		margin-left:45px;
+		margin-top: 64px;
+	}
+	.middle .miTop ul li{
+		margin-left:25px;
+		width: 360px;
+		height: 300px;
+		float: left;
+	}
+	.middle .miTop ul li div{
+		color: #797979;
+		text-align: center;
+		width: 360px;
+		height: 210px;
+		border-radius: 10px;
+	}
+	.middle .miTop ul li .bred{
+		color: white;
+		background-color: #F77B6F;
+	}
+	.middle .miTop ul li div p{
+		font-size: 16px;
+		line-height: 300px;
+	}
+	.middle .miTop ul li>p{
+		line-height: 25px;
+		margin-top: 25px;
+		color: #797979;
+	}
+	.middle .miTop .Tnow{
+		width: 100%;
+		float: left;
+		margin-top: 82px;
+	}
+	.middle .miTop .Tnow .Tblue{
+		margin-left: 62px;
+		float: left;
+		width: 850px;
+		height: 89px;
+		background-color: #475168;
+		border-radius: 5px;
+	}
+	.middle .miTop .Tnow .Tblue .Btext{
+		margin-left: 20px;
+		line-height: 35px;
+		margin-top: 15px;
+		color: white
+	}
+	.middle .miTop .Tnow .Tblue .Stext{
+		margin-left: 20px;
+		font-size: 12px;
+		color: #93A9AA;
+	}
+	.middle .miTop .Tnow .Tred{
+		margin-left: 30px;
+		border-radius: 5px;
+		float: left;
+		height: 89px;
+		width: 265px;
+		background-color: #FF6C60;
+	}
+	.middle .miTop .Tnow .Tred p{
+		margin-left:30px;
+		line-height: 89px;
+		color: white;
+	}
+	.middle .miMi{
+		margin-left: 132px;
+		margin-top: 175px;
+	}
+	.middle .miMi img{
+		float: left;
+		border-radius: 10px;
+	}
+	.middle .miMi .Micha{
+		margin-left:100px;
+		width: 526px;
+		margin-top: 24px;
+		float: left;
+	}	
+	.middle .miMi .Micha .Bicha{
+		color: #475168;
+		font-size: 18px;
+	}
+	.middle .miMi .Micha .Socha{
+		line-height: 20px;
+		font-size: 12px;
+		margin-top: 70px;
+		color: #797979;
+
+	}
+	.middle .miMi .Micha span{
+		line-height: 62px;
+		text-align: center;
+		color: white;
+		margin-top: 46px;
+		display: block;
+		width: 192px;
+		height: 62px;
+		background-color: #475168;
+		border-radius: 5px;
+	}
+	.middle .miBo{
+		margin-top:170px;
+	}
+	.middle .miBo .boLe{
+		margin-left: 62px;
+		width: 561px;
+		float: left;
+	}
+	.middle .miBo .boRi{
+		margin-left: 30px;
+		width: 556px;
+		float: left;
+	}
+	.middle .miBo .lalTo li{
+		color: white;
+		line-height: 54px;
+		text-align: center;
+		float: left;
+		margin-left: 1px;
+		width: 186px;
+		height: 54px;
+		background-color: #6F6F6F;
+	}
+	.middle .miBo .lalTo .le{
+		background-color: white;
+		color: #6F6F6F;
+		border-radius: 5px 0 0 0;
+	}
+	.middle .miBo .ri{
+		border-radius: 0 5px 0 0;
+	}
+	.middle .miBo .lalBo .li img{
+		float: left;
+	}
+	.middle .miBo .lalBo .li{
+		margin-top: 15px
+	}
+	.middle .miBo .lalBo .li div{
+
+		margin-left: 60px;
+	}
+	.middle .miBo .lalBo .li p{
+		color: #797979;
+		line-height: 20px;
+		font-size: 12px
+	}
+	.middle .miBo .lalBo .li .redd{
+		font-size: 14px;
+		color: #F77B6F;
+	}
+	.middle .miBo .boRi .sea img{
+		margin-top: 20px;
+		float: left;
+		border-radius: 50%
+	}
+	.middle .miBo .boRi .sea span{
+		margin-top:30px;
+		float: left;
+		display:block;
+		width: 150px;
+		height: 50px;
+		margin-left: 10px;
+	}
+	.middle .miBo .boRi .sea span p{
+		line-height: 20px;
+	}
+	.middle .miBo .boRi .sea span .bi{
+		color: #504946;
+	}
+	.middle .miBo .boRi .sea span .sl{
+		font-size: 12px;
+		color: #797979;
+	}
+	.middle .miBo .boRi .lebb{
+		font-size: 12px;
+		padding: 20px 20px 20px 20px;
+		color: #79798A;
+		height: 102px;
+		margin-top: 20px;
+		background-color: #E9E9E9;
+		border-radius: 5px;
+	}
+	.middle .miBo .ttom{
+		margin-left: 42px;
+		margin-top: 62px;
+	}
+	.middle .miBo .ttom p{
+		color: #475168;
+		margin-bottom:20px;
+		font-size: 18px;
+		margin-left: 20px;
+	}
+	.middle .miBo .ttom img{
+		margin-left: 20px;
+	}
+	.middle .miBo .leRi{
+		margin-top: 28px;
+		margin-left: 554px;
+
+	}
+	.middle .miBo .leRi span{
+		text-align: center;
+		line-height: 40px;
+		float: left;
+		display: block;
+		border-radius: 5px;
+		margin-left:10px;
+		width: 70px;
+		height: 40px;
+		background-color: #EEEEEE;
+	}
+	.middle .miBo .and{
+		margin-top: 54px;
+		height: 400px;
+		background-color: #E87C72;
+		line-height: 400px;
+		color: white;
+		text-align: center;
+	}
+	.middle .miBo .spo{
+		height: 210px;
+	}
+	.middle .miBo .spo img{
+
+		margin-top: 60px;
+		margin-left:115px;
+
+	}
+	.bottom{
+		height: 312px;
+		background-color: #475268;
+	}
+	.bottom div{
+		margin-top: 50px;
+		color: white;
+		float: left;
+	}
+	.bottom div p {
+		font-size: 12px;
+		line-height: 30px;
+	}	
+	.bottom div .bigz{
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.bottom .touch{
+		margin-left: 62px;
+	}
+	.bottom .complaint{
+		margin-left: 106px;
+	}
+	.bottom .touch .ea span{
+		color: #F37C6A
+	} 
+	.bottom .ink{
+		margin-left: 420px;
+	}
+	.bottom .ink ul{
+		width: 250px;
+	}
+	.bottom .ink ul li{
+		margin: 0 10px 10px 0;
+		float: left;
+		width: 50px;
+		height: 50px;
+		background-color: #505B71;
+	}
+	</style>
+</head>
+<body>
+	<div class="bodyBox">
+		<div class="box">
+			<div class="topNav">
+				<div class="logo">
+					<span class="your">君の名</span>
+					<span class="name">前は</span>
+				</div>
+				<div class="navbar">
+					<ul class="youName">
+						<li  class="red">
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li class="topRight">
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+					</ul>
+					<div class="hunt">
+						<img src="2016-12-09_204248.png">
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="topBottom">
+				<span class="Lleft"><</span>
+				<span class="Lright">></span>
+				<p class="price">価格 10000 円</p>
+				<p class="pri">限定众チップ、先着順だ</p>
+				<p class="pr">思いと神明ねじれの考え、自分のことも忘れて、すぐに忘れていた。だから私はこの感情の贯で、最後は、大声で叫び、夜空</p>
+				<span class="buy">早速購入</span>
+				<ul>
+					<li></li>
+					<li class="atpre"></li>
+					<li></li>
+				</ul>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="middle">
+				<div class="miTop">
+					<p class="bigTtl">ようこそ、あなたの名前 - アドレスを共有</p>
+					<p class="smallTtl">あなたは世界のどの地方に再び私きっとあなたに会いに行くの</p>
+					<ul>
+						<li>
+							<div>
+								<p>こうして強気の思った</p>
+							</div>
+							<p>1か月后の日本のある深山の田舎の町。女子高校生三つ叶た毎日の生活は忧郁で、彼女の悩みがあるだけを務めた父親</p>
+						</li>
+						<li>
+							<div class="bred">
+								<p>自分のことも忘れて</p>
+							</div>
+							<p>と神明ねじれの考え、自分のことも忘れて、すぐに忘れていた。だから私はこの感情の贯で、最後は、大声で叫び、夜空</p>
+						</li>
+						<li>
+							<div>
+								<p>この唯一の感情の永遠</p>
+							</div>
+							<p>突然私こうして強気の思った。もしこの世界は残酷なところだったら、私はこの唯一の寂しさ、全身全柔軟でこの世界に见た</p>
+						</li>
+					</ul>
+					<div class="Tnow">
+						<div class="Tblue">
+							<p class="Btext">周りからも爱は心配の老人だ</p>
+							<p class="Stext">自分のことも忘れて、すぐに忘れていた。だから私はこの感情の贯で、最後は.この唯一の感情の永遠のもがき続けた</p>
+						</div>
+						<div class="Tred">
+							<p>ただ时间を強</p>
+						</div>
+					</div>
+				</div>
+				<div class="miMi">
+					<img src="bb.jpg" width="415px" height="334px" />
+					<div class="Micha">
+						<p class="Bicha">堅い人間の & 現代(ヒョンデ)デザイン思潮</p>
+						<p class="Socha">
+							夕日が悄気。太阳はいつか云の背後に沈んだ。直射でから解放された光と影から融合、世界の輪郭が柔らかい八。空はとても明るく、地上が淡い影が完全に包んだ。ピンク色の暫定光、周囲が溢れた。そうそう、一时间帯は、名前があるのだ。夕暮れ。かなたは谁だ。誰を彼方。人の轮郭はだんだん暧昧と、この世界の物と出会いの时间。あの古い名称。私はそっと読みあげた。——黄ばんだ灰色の時だ。声が、重なった。が期待するのだ。云间から目をそらし、正面を見て。
+						</p>
+						<span>ぐに忘れていた</span>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+				<div class="miBo">
+					<div class="boLe">
+						<ul class="lalTo">
+							<li class="le">ニュース</li>
+							<li>事件</li>
+							<li class="ri">掲示</li>
+						</ul>
+						<div style="clear: both"></div>
+						<ul class="lalBo">
+							<li class="li">
+								<img src="aaaaa.jpg" width="50px" height="50px" />
+								<div>
+									<p class="redd">ニュースのタイトル</p>
+									<p>时间の障壁をくぐり抜け、歪曲、结びつきやっと见つけたこの</p>
+								</div>
+								<div style="clear: both"></div>
+							</li>
+							<li class="li">
+								<img src="bbbb.jpg" width="50px" height="50px" />
+								<div>
+									<p class="redd">ニュースのタイトル 1</p>
+									<p>たとえあなたのすべてが白紙に戻されるもう一度头を探し始めた</p>
+								</div>
+								<div style="clear: both"></div>
+							</li>
+							<li class="li">
+								<img src="cc.jpg" width="50px" height="50px" />
+								<div>
+									<p class="redd">ニュースのタイトル 2</p>
+									<p>たは拒否して、あなたの落ちた涙がわかりましたるで、そのあなたの名前三年</p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+					<div class="boRi">
+						<div class="sea">
+								<img src="ii.jpg" width="100px" height="100px" />
+							<span>
+								<p class="bi">新海さん</p>
+								<p class="sl">ちた涙がわかりましたるで</p>
+							</span>
+						</div>
+						<div style="clear: both"></div>
+						<div class="lebb">をくぐり抜け、歪曲、结びつき、戻って、消えた。流星のもたらすは何ですか。绝望、あるいは希望。无意识に同じ空のその期待、三年前の出会い、あなたあなたの名前を口にしたが、私よりもっと前のあなたの名前。三年后の私だから、何を失って気落ちした。今私はついにわかりました、はぐれないだろう。目覚めた後も思い出せる?ねぇ、あなたの名前は何
+						私はずっとあなたの迹を探した
+								たよりあなたのあの不器用な笑颜
+								やっと见つけたこの地方
+								た
+						</div>
+					</div>
+					<div style="clear: both"></div>
+					<div class="ttom">
+						<p>最近 仕事</p>
+						<img src="ee.png" width="270px" height="202px" />
+						<img src="f.png" width="270px" height="202px" />
+						<img src="g.jpg" width="270px" height="202px" />
+						<img src="bb.jpg" width="270px" height="202px" />
+					</div>
+					<div class="leRi">
+						<span><</span>
+						<span>></span>
+					</div>
+					<div style=" clear: both"></div>
+					<div class="and">と神明ねじれの考え、自分のことも忘れて、すぐに忘れていた。だから私はこの感情の贯で、最後は、大声で叫び、</div>
+					<div class="spo">
+						<img src="r.jpg" width="114px" height="82px" />
+						<img src="rr.jpg" width="114px" height="82px" />
+						<img src="rrr.jpg" width="114px" height="82px" />
+						<img src="rrrr.jpg" width="114px" height="82px" />
+						<img src="rrrrr.jpg" width="114px" height="82px" />
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="touch">
+					<p class="bigz">本部の電話</p>
+					<p>興行 : 90% パワー</p>
+					<p>本部の住所 : 日本</p>
+					<p>電話 : 536-789921</p>
+					<p>固定電話 :536-789921</p>
+					<p class="ea">
+						Email : <span>support@vectorlab.com</span>
+					</p>
+				</div>
+				<div class="complaint">
+					<p class="bigz">クレームサイト</p>
+					<p>サイトのお手本 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -パワー<</p>
+				</div>
+				<div  class="ink">
+					<p class="bigz">スポンサー</p>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
